@@ -3,34 +3,55 @@
 <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
     <meta name="viewport" content="width=device-width">
-    <title>Chalkboard Winamp Player</title>
+    <title>Chalkboardify</title>
 	<link rel="icon" href="https://chalkboardlp.com/radio/favicon.png" type="image/x-icon">
     <style>
 	@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 	@import url('https://fonts.googleapis.com/css?family=Raleway:600,700');
 	@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 	</style>
-
+	
+	<style>
+#vlc {
+	height:30px;
+	width: 150px;
+	border:3px solid #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	line-heigh: 50px;
+	font-size: 12px;
+	color: #FFFFFF;
+	background-image: linear-gradient(to right, #ed7b01 0%, #f6b41f 80%);
+	cursor:pointer;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+</style>
     
 </head>
-<body style="background: #000000;">
+<body style="background-image: linear-gradient(to right, #000000 0%, #262a33 100%);">
 
 
 
 <div style="width:800px;height:800px;position:relative;margin-left:auto;margin-right:auto;border:0px solid #cdcdcd;">
+
 	
 <div style="position: absolute; margin: 7px 0px 0px 0px; text-align: center; width: 800px;">
+
 <a style="font-size: 40px; color:#FFFFFF; font-family: 'Open Sans', sans-serif;">Chalkboardify</a></br>
-<a style="font-size: 20px; color:#FFFFFF; font-family: 'Work Sans', serif;">Click the icons to play VLC playlists</a></br>
+<a style="font-size: 20px; color:#1dcf5d; font-family: 'Open Sans', sans-serif; font-weight: 900px;">Click the icons to play VLC playlists</a></br></br>
+<a href="https://www.videolan.org/vlc/" target="_blank"><button id="vlc">Download VLC Player<img src="https://upload.wikimedia.org/wikipedia/commons/3/38/VLC_icon.png" height="40px" style="float: left; margin-top: -25px; margin-left: -30px;"/></button></a>
 </div>
 
-<div style="position: absolute; margin: 130px 0px 0px 20px; text-align: center; width: 800px;">
+<!-- FILA 1 -->
+
+<div style="position: absolute; margin: 200px 0px 0px 20px; text-align: center; width: 800px;">
 
 <a href="https://teacherchriser.github.io/music/playlists/ub40.m3u" target="_blank"><img src="https://i.scdn.co/image/ab67616d0000b273678217496fb787a68f14f8af" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left;">
 <p style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -100px; position: relative; text-align: center; max-width: 100px;">UB 40</p></a>
 
 <a href="https://teacherchriser.github.io/music/playlists/daft-punk.m3u" target="_blank"><img src="https://i.scdn.co/image/ab67616d00001e02b1f18dc3658aff286fa9f351" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left;">
-<p style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -110px; position: relative; text-align: center; max-width: 100px;">Daft Punk</p></a>
+<p style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -115px; position: relative; text-align: center; max-width: 100px;">Daft Punk</p></a>
 
 <a href="https://teacherchriser.github.io/music/playlists/michael-jackson.m3u" target="_blank"><img src="https://i.scdn.co/image/ab67616d0000b273de437d960dda1ac0a3586d97" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left;">
 <p style="font-size: 14px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -130px; position: relative; text-align: center; max-width: 130px;">Michael Jackson</p></a>
@@ -38,9 +59,35 @@
 <a href="https://teacherchriser.github.io/music/playlists/80s.m3u" target="_blank"><img src="https://i.scdn.co/image/ab67616d0000b27373334764588662a157677b3f" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left;">
 <p style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -90px; position: relative; text-align: center; max-width: 130px;">80s</p></a>
 
+<a href="https://teacherchriser.github.io/music/playlists/90s.m3u" target="_blank"><img src="https://i.scdn.co/image/ab67616d00001e02d621a235a2e9402ca8478214" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left;">
+<p style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -90px; position: relative; text-align: center; max-width: 130px;">90s</p></a>
 
+<a href="https://teacherchriser.github.io/music/playlists/bee-gees.m3u" target="_blank"><img src="https://i.scdn.co/image/ab67616d0000b27344d10bd5b6282b959d695a41" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left;">
+<p style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -110px; position: relative; text-align: center; max-width: 130px;">Bee Gees</p></a>
 
 </div>
+
+<!-- FILA 2 -->
+
+<div style="position: absolute; margin: 350px 0px 0px 20px; text-align: center; width: 800px;">
+
+<a href="https://teacherchriser.github.io/music/playlists/salsa-01.m3u" target="_blank"><img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84df1dc8712f572b755cfe400a" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left;">
+<p style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -115px; position: relative; text-align: center; max-width: 130px;">Salsa Vol 1</p></a>
+
+<a href="https://teacherchriser.github.io/music/playlists/carlos-vives.m3u" target="_blank"><img src="https://i.scdn.co/image/ab67616d0000b27319620bc7b11768a982b843cd" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left;">
+<p style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -120px; position: relative; text-align: center; max-width: 130px;">Carlos Vives</p></a>
+
+<a href="https://teacherchriser.github.io/music/playlists/fonseca.m3u" target="_blank"><img src="https://i.scdn.co/image/ab67616d0000b273394007ea48d1b9ef4534a5db" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left;">
+<p style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -110px; position: relative; text-align: center; max-width: 130px;">Fonseca</p></a>
+
+<a href="https://teacherchriser.github.io/music/playlists/juan-luis-guerra.m3u" target="_blank"><img src="https://i.scdn.co/image/ab67616d0000b2735335e0bd1bfefbd3b563e6fb" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left;">
+<p style="font-size: 14px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -130px; position: relative; text-align: center; max-width: 130px;">Juan Luis Guerra</p></a>
+
+<a href="https://teacherchriser.github.io/music/playlists/grupo-niche.m3u" target="_blank"><img src="https://i.scdn.co/image/ab67616d0000b27351c9409f7962e3aee55c74c6" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left;">
+<p style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -120px; position: relative; text-align: center; max-width: 130px;">Grupo Niche</p></a>
+
+<a href="https://teacherchriser.github.io/music/playlists/joe-arroyo.m3u" target="_blank"><img src="https://i.scdn.co/image/ab67616d0000b273706095b7b350754966b671d0" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left;">
+<p style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -115px; position: relative; text-align: center; max-width: 130px;">Joe Arroyo</p></a>
 
 
 
