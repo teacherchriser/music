@@ -27,6 +27,23 @@
 	border-radius: 5px;
 }
 </style>
+
+<script type="text/javascript" src="jquery-2.1.0.js"></script>
+<script type='text/javascript' src='jquery-1.6.4.js'></script>
+<script type='text/javascript' src='videosub-0.9.9.js'></script>
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+
+<script type='text/javascript'>
+$(document).ready(function() {
+    $('li').click(function () {
+        var url = $(this).attr('rel');
+        $('#iframe').attr('src', url);
+        $('#iframe').reload();
+    });
+});
+</script>
+
+
     
 </head>
 <body style="background-image: linear-gradient(to bottom, #000000 0%, #262a33 100%);">
@@ -36,58 +53,64 @@
 <div style="width:800px;height:1000px;position:relative;margin-left:auto;margin-right:auto;border:0px solid #cdcdcd;">
 
 	
-<div style="position: absolute; margin: 7px 0px 0px 0px; text-align: center; width: 800px;">
+<div style="position: absolute; margin: 12px 0px 0px 0px; text-align: center; width: 800px;">
 
-<a style="font-size: 40px; color:#FFFFFF; font-family: 'Open Sans', sans-serif;">Chalkboardify</a></br>
-<a style="font-size: 20px; color:#1dcf5d; font-family: 'Open Sans', sans-serif; font-weight: 900px;">Click the icons to play VLC playlists</a></br></br>
+<a style="font-size: 50px; color:#FFFFFF; font-family: 'Open Sans', sans-serif;">Chalkboardify</a></br>
+<a style="font-size: 17px; color:#1dcf5d; font-family: 'Open Sans', sans-serif;">Haz click en las imagenes para cargar las playlists</a></br>
+<a style="font-size: 17px; color:#f6b41f; font-family: 'Open Sans', sans-serif;">Haz click en los nombres para descargar y reproducir con VLC player</a></br></br>
 <a href="https://www.videolan.org/vlc/" target="_blank"><button id="vlc">Download VLC Player<img src="https://upload.wikimedia.org/wikipedia/commons/3/38/VLC_icon.png" height="40px" style="float: left; margin-top: -25px; margin-left: -30px;"/></button></a>
+
+</br></br></br></br>
+<iframe src="https://archive.org/embed/DaftPunkDiscovery" width="500px" height="30px" style="border: 3px solid #1dcf5d; border-radius: 5px;" id="iframe" allowfullscreen autoplay></iframe>
 </div>
+
+
 
 <!-- FILA 1 -->
 
-<div style="position: absolute; margin: 200px 0px 0px 20px; text-align: center; width: 800px;">
+<div style="position: absolute; margin: 320px 0px 0px 20px; text-align: center; width: 800px;">
 
-<a href="https://teacherchriser.github.io/music/playlists/ub40.m3u" target="_blank"><img src="https://i.scdn.co/image/ab67616d0000b273678217496fb787a68f14f8af" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left;">
-<p style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -100px; position: relative; text-align: center; max-width: 100px;">UB 40</p></a>
+<li rel="https://archive.org/embed/ojomonodianosen_gmail_UB40" style="list-style-type: none;"><img src="https://i.scdn.co/image/ab67616d0000b273678217496fb787a68f14f8af" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left; cursor: pointer;"></li>
+<a href="https://teacherchriser.github.io/music/playlists/ub40.m3u" style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -100px; position: relative; text-align: center; max-width: 100px;">UB 40</a>
 
-<a href="https://teacherchriser.github.io/music/playlists/daft-punk.m3u" target="_blank"><img src="https://i.scdn.co/image/ab67616d00001e02b1f18dc3658aff286fa9f351" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left;">
-<p style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -115px; position: relative; text-align: center; max-width: 100px;">Daft Punk</p></a>
+<li rel="https://archive.org/embed/DaftPunkDiscovery" style="list-style-type: none;"><img src="https://i.scdn.co/image/ab67616d00001e02b1f18dc3658aff286fa9f351" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left; cursor: pointer;"></li>
+<a href="https://teacherchriser.github.io/music/playlists/daft-punk.m3u" style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -115px; position: relative; text-align: center; max-width: 130px;">Daft Punk</a>
 
-<a href="https://teacherchriser.github.io/music/playlists/michael-jackson.m3u" target="_blank"><img src="https://i.scdn.co/image/ab67616d0000b273de437d960dda1ac0a3586d97" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left;">
-<p style="font-size: 14px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -130px; position: relative; text-align: center; max-width: 130px;">Michael Jackson</p></a>
+<li rel="https://archive.org/embed/michael-jackson-discography-1972-2009" style="list-style-type: none;"><img src="https://i.scdn.co/image/ab67616d0000b273de437d960dda1ac0a3586d97" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left; cursor: pointer;"></li>
+<a href="https://teacherchriser.github.io/music/playlists/michael-jackson.m3u" style="font-size: 14px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -130px; position: relative; text-align: center; max-width: 130px;">Michael Jackson</a>
 
-<a href="https://teacherchriser.github.io/music/playlists/80s.m3u" target="_blank"><img src="https://i.scdn.co/image/ab67616d0000b27373334764588662a157677b3f" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left;">
-<p style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -90px; position: relative; text-align: center; max-width: 130px;">80s</p></a>
+<li rel="https://archive.org/embed/80s-night-collection" style="list-style-type: none;"><img src="https://i.scdn.co/image/ab67616d0000b27373334764588662a157677b3f" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left; cursor: pointer;"></li>
+<a href="https://teacherchriser.github.io/music/playlists/80s.m3u" style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -90px; position: relative; text-align: center; max-width: 130px;">80s</a>
 
-<a href="https://teacherchriser.github.io/music/playlists/90s.m3u" target="_blank"><img src="https://i.scdn.co/image/ab67616d00001e02d621a235a2e9402ca8478214" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left;">
-<p style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -90px; position: relative; text-align: center; max-width: 130px;">90s</p></a>
+<li rel="https://archive.org/embed/unnokeng-90s" style="list-style-type: none;"><img src="https://i.scdn.co/image/ab67616d00001e02d621a235a2e9402ca8478214" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left; cursor: pointer;"></li>
+<a href="https://teacherchriser.github.io/music/playlists/90s.m3u" style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -90px; position: relative; text-align: center; max-width: 130px;">90s</a>
 
-<a href="https://teacherchriser.github.io/music/playlists/bee-gees.m3u" target="_blank"><img src="https://i.scdn.co/image/ab67616d0000b27344d10bd5b6282b959d695a41" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left;">
-<p style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -110px; position: relative; text-align: center; max-width: 130px;">Bee Gees</p></a>
+<li rel="https://archive.org/embed/bee-gees-bee-gees-story" style="list-style-type: none;"><img src="https://i.scdn.co/image/ab67616d0000b27344d10bd5b6282b959d695a41" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left; cursor: pointer;"></li>
+<a href="https://teacherchriser.github.io/music/playlists/bee-gees.m3u" style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -110px; position: relative; text-align: center; max-width: 130px;">Bee Gees</a>
 
 </div>
 
 <!-- FILA 2 -->
 
-<div style="position: absolute; margin: 350px 0px 0px 20px; text-align: center; width: 800px;">
+<div style="position: absolute; margin: 490px 0px 0px 20px; text-align: center; width: 800px;">
 
-<a href="https://teacherchriser.github.io/music/playlists/salsa-01.m3u" target="_blank"><img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84df1dc8712f572b755cfe400a" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left;">
-<p style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -115px; position: relative; text-align: center; max-width: 130px;">Salsa Vol 1</p></a>
+<li rel="https://archive.org/embed/021-hector-lavoe-el-cantante" style="list-style-type: none;"><img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84df1dc8712f572b755cfe400a" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left; cursor: pointer;"></li>
+<a href="https://teacherchriser.github.io/music/playlists/salsa-01.m3u" style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -115px; position: relative; text-align: center; max-width: 130px;">Salsa Vol 1</a>
 
-<a href="https://teacherchriser.github.io/music/playlists/carlos-vives.m3u" target="_blank"><img src="https://i.scdn.co/image/ab67616d0000b27319620bc7b11768a982b843cd" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left;">
-<p style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -120px; position: relative; text-align: center; max-width: 130px;">Carlos Vives</p></a>
+<li rel="https://archive.org/embed/las20mejorescancionesdecarlosvivescarlosvivesgrandesexitosenganchadosmixguariimtgk8" style="list-style-type: none;"><img src="https://i.scdn.co/image/ab67616d0000b27319620bc7b11768a982b843cd" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left; cursor: pointer;"></li>
+<a href="https://teacherchriser.github.io/music/playlists/carlos-vives.m3u" style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -120px; position: relative; text-align: center; max-width: 130px;">Carlos Vives</a>
 
-<a href="https://teacherchriser.github.io/music/playlists/fonseca.m3u" target="_blank"><img src="https://i.scdn.co/image/ab67616d0000b273394007ea48d1b9ef4534a5db" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left;">
-<p style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -110px; position: relative; text-align: center; max-width: 130px;">Fonseca</p></a>
+<li rel="https://archive.org/embed/fonsecalamejorcancionfonsecagreatesthitsfullalbumh2ob3cn6ake" style="list-style-type: none;"><img src="https://i.scdn.co/image/ab67616d0000b273394007ea48d1b9ef4534a5db" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left; cursor: pointer;"></li>
+<a href="https://teacherchriser.github.io/music/playlists/fonseca.m3u" style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -110px; position: relative; text-align: center; max-width: 130px;">Fonseca</a>
 
-<a href="https://teacherchriser.github.io/music/playlists/juan-luis-guerra.m3u" target="_blank"><img src="https://i.scdn.co/image/ab67616d0000b2735335e0bd1bfefbd3b563e6fb" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left;">
-<p style="font-size: 14px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -130px; position: relative; text-align: center; max-width: 130px;">Juan Luis Guerra</p></a>
+<li rel="https://archive.org/embed/10-a-pedir-su-mano" style="list-style-type: none;"><img src="https://i.scdn.co/image/ab67616d0000b2735335e0bd1bfefbd3b563e6fb" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left; cursor: pointer;"></li>
+<a href="https://teacherchriser.github.io/music/playlists/juan-luis-guerra.m3u" style="font-size: 14px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -130px; position: relative; text-align: center; max-width: 130px;">Juan Luis Guerra</a>
 
-<a href="https://teacherchriser.github.io/music/playlists/grupo-niche.m3u" target="_blank"><img src="https://i.scdn.co/image/ab67616d0000b27351c9409f7962e3aee55c74c6" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left;">
-<p style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -120px; position: relative; text-align: center; max-width: 130px;">Grupo Niche</p></a>
+<li rel="https://archive.org/embed/18-grupo-niche-mi-negra-y-la-calentura" style="list-style-type: none;"><img src="https://i.scdn.co/image/ab67616d0000b27351c9409f7962e3aee55c74c6" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left; cursor: pointer;"></li>
+<a href="https://teacherchriser.github.io/music/playlists/grupo-niche.m3u" style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -120px; position: relative; text-align: center; max-width: 130px;">Grupo Niche</a>
 
-<a href="https://teacherchriser.github.io/music/playlists/joe-arroyo.m3u" target="_blank"><img src="https://i.scdn.co/image/ab67616d0000b273706095b7b350754966b671d0" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left;">
-<p style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -115px; position: relative; text-align: center; max-width: 130px;">Joe Arroyo</p></a>
+<li rel="https://archive.org/embed/06-mama" style="list-style-type: none;"><img src="https://i.scdn.co/image/ab67616d0000b273706095b7b350754966b671d0" width="100px" style="margin-right: 20px; border: 5px solid #FFFFFF; border-radius: 10px; float:left; cursor: pointer;"></li>
+<a href="https://teacherchriser.github.io/music/playlists/joe-arroyo.m3u" style="font-size: 15px; color:#FFFFFF; font-family: 'Open Sans', sans-serif; float: left; margin-top: 115px; margin-left: -115px; position: relative; text-align: center; max-width: 130px;">Joe Arroyo</p></a>
 
 
 
